@@ -1,0 +1,133 @@
+<html>
+<head>
+	
+	<style type="text/css">
+		body.style
+		{
+			color:cyan;
+			background-color:rgb(135, 206, 250);
+			background-image:"2.jpg";
+		}
+	</style>
+<script>
+function fun()
+{
+	a=f1.t1.value;
+	b=f1.t2.value;
+	c=f1.t3.value;
+	d=f1.t4.value;
+	e=f1.t5.value;
+	f=f1.t6.value;
+	g=f1.t7.value;
+	h=f1.t8.value;
+if(a=="")
+{
+alert("case id should not be empty");
+return false;
+}
+else if(b=="")
+{
+alert("password should not be empty");
+return false;
+}
+else if(b.length<=6)
+{
+alert("password should contain  minimum 6 characters");
+return false;
+}
+else if(c=="")
+{
+alert("name should not be empty");
+return false;
+}
+else if(d=="")
+{
+alert("mobile number should not be empty");
+return false;
+}
+else if(d.length<10 || d.length>10)
+{
+  alert("phone numbers should be of 10 numbers");
+  return false;
+}
+else if(e=="")
+{
+alert("email should not be empty");
+return false;
+}
+else if(f=="")
+{
+alert("address should not be empty");
+return false;
+}
+else if(g=="")
+{
+alert("aadhar no should not be empty");
+return false;
+}
+else if(g.length<12 || g.length>12)
+{
+  alert("aadhar numbers should be of 12 numbers");
+  return false;
+}
+else if(h=="")
+{
+alert("description should not be empty");
+return false;
+}
+else
+return true;
+}
+</script>
+</head>
+
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="icon" type="image/png" href="11.png" sizes="20x20">
+	<link rel="stylesheet" href="style.css">
+	
+<body class="style">
+<!-- <div class="11.png"> -->
+<h1 align="center" class="homewel">WELCOME TO CASE MANAGEMENT SYSTEM</h1>
+<header>
+<form action="page.php" method="post" name="f1" onSubmit="return fun()"><br>
+<h2 align="center"><marquee behavior="scroll" direction="left" bgcolor="black" scrollamount="10"><b><u>USER REGISTRATION</u></b></marquee></H2>
+<br><br><br><br><br>
+<table border="0" align="center">
+<tr><td><label class="form-input-title" style="color: white">Caseid</label></td>
+<td><input class="form-control"  type="text" name="t1" placeholder="Caseid"/></td>
+</tr>
+<tr><td><label class="form-input-title" style="color: white">Password</label></td>
+<td><input class="form-control" type="password" name="t2" placeholder="Password"/></td>
+</tr>
+<tr><td><label class="form-input-title" style="color: white">Name</label></td>
+<td><input class="form-control" type="text" name="t3" placeholder="Name"/></td>
+</tr>
+<tr><td><label class="form-input-title" style="color: white">Mobile</label></td>
+<td><input class="form-control" type="number" name="t4" placeholder="Mobile"/></td>
+</tr>
+<tr><td><label class="form-input-title" style="color: white">Email-Id</label></td>
+<td><input class="form-control" type="email" name="t5" placeholder="Email-Id"/></td></tr>
+<tr><td><label class="form-input-title" style="color: white">Address</label></td>
+<td><input class="form-control" type="textarea" cols="3" rows="3" name="t6" placeholder="Address"/></td></tr>
+<tr><td><label class="form-input-title" style="color: white">Aadhar number</label></td>
+<td><input class="form-control" type="number" name="t7" placeholder="Aadhar number" /></td></tr>
+<tr><td><label class="form-input-title" style="color: white">Complaint Description</label></td>
+<td><input class="form-control" type="text" name="t8" placeholder="Complaint Description"/></td></tr>
+<tr><td><label class="form-input-title" style="color: white">Attach Document</label></td>
+<td><input class="form-control" type="file" name="t9"></td></tr>
+<tr>
+<td align="center"><input class="btn btn-primary" type="submit" value="submit"/></td>
+<td align="center"><input class="btn btn-primary" type="reset" value="reset"/></td>
+</tr>
+</table>
+</form>
+<table align="center">
+	<tr>
+	<td><form method="get" action="main.html">
+	<button  class="btn btn-primary">Home</button>
+	</form>
+	</td>
+	</tr>
+	</table>
+</body>
+</html>
